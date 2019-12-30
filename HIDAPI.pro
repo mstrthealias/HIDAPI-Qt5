@@ -11,7 +11,7 @@ HEADERS += hidapi.h
 # Add appropriate source file depending on OS
 # -------------------------------------------------
 macx:  SOURCES += mac/hid.c
-unix: !macx:  SOURCES += linux/hid-libusb.c
+unix: !macx:  SOURCES += linux/hid.c
 win32: SOURCES += windows/hid.c
 
 # -------------------------------------------------
